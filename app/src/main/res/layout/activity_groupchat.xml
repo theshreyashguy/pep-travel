@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/activity_groupchat"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".groupchat">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#61FFFFFF"
+        android:orientation="horizontal">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@mipmap/nanana"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="3dp"
+            app:civ_shadow_radius="@dimen/cardview_compat_inset_shadow"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="35dp"
+            android:gravity="center_vertical"
+            android:text="Welcome Traveller"
+            android:textColor="@color/white"
+            android:textSize="28dp"
+            android:textStyle="bold|italic" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_add"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/mainhu"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:text="Welcome Traveller"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold|italic" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="530dp"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/group_recyv"
+                tools:listitem="@layout/yel"/>
+
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/flStart2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="bottom|left"
+            android:background="@drawable/item_color_accent_border_ripple_background">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:id="@+id/linerall"
+        android:background="@drawable/abcd"
+        android:backgroundTint="#FFFFFF"
+        android:orientation="horizontal"
+        >
+
+
+       <EditText
+           android:id="@+id/messagetext"
+           android:layout_width="300dp"
+           android:layout_height="50dp"
+           />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:id="@+id/daba"
+            android:text="->"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/teal_700"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

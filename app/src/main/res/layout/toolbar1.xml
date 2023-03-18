@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/black"
+    android:layout_margin="@dimen/cardview_compat_inset_shadow"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:orientation="horizontal">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@mipmap/nanana"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            app:civ_shadow_radius="@dimen/cardview_compat_inset_shadow"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="35dp"
+            android:gravity="center_vertical"
+            android:text="Welcome Traveller"
+            android:textColor="@color/white"
+            android:textSize="28dp"
+            android:textStyle="bold|italic" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
